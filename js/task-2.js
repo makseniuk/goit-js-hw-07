@@ -29,8 +29,6 @@ const images = [
 ];
 
 
-itemsGalley.append(img);
-
 const listGallery = document.querySelector(".gallery");
 
 images.forEach(image => {

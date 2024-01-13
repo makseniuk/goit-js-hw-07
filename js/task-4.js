@@ -3,10 +3,10 @@ const loginForm = document.querySelector(".login-form");
 loginForm.addEventListener("submit", function (event) {
     event.preventDefault();
     
-    const emailInput = this.element.email;
-    const passwordInput = this.element.password;
+    const emailInput = this.elements.email;
+    const passwordInput = this.elements.password;
 
-    if (emailInput.value.trim() || passwordInput.value.trim()) {
+    if (emailInput.value.trim() === passwordInput.value.trim()) {
         alert("All fields must be completed");
         return;
     }
