@@ -5,7 +5,7 @@ loginForm.addEventListener("submit", function (event) {
   const emailInput = this.elements.email;
   const passwordInput = this.elements.password;
 
-   if (emailInput.value.trim() === passwordInput.value.trim()) {
+   if (emailInput.value.trim() === "" || passwordInput.value.trim() === "") {
         alert("All fields must be completed");
         return;
    }
